@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>RedStarCarte</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="RedStarCarte">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#70c29b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<style>
+  html, body { margin:0; height:100%; background:#70c29b; overflow:hidden; }
+  iframe { position:fixed; inset:0; width:100%; height:100%; border:0; background:#70c29b; }
+</style>
+</head>
+<body>
+<iframe id="app" title="RedStarCarte" allow="clipboard-write"></iframe>
+<script>
+  // Adresse de l'application Apps Script (celle qui finit par /exec)
+  var URL_APPLICATION = "https://script.google.com/macros/s/AKfycbyiw7z5LbH2JO7RiUzjbNy31Fb1CDR7-u5dyBsI-gyTbCSr1AkkdM_wlFFMyjYcx5o1gw/exec";
+  document.getElementById("app").src = URL_APPLICATION;
+</script>
+</body>
+</html>
